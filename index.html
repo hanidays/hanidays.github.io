@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hani's Day</title>
+  <title>Hani's day</title>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="style/style.css">
@@ -122,15 +122,33 @@
       <p class="last-smile" data-node-name="outroSmiley">:)</p>
     </div>
   </div>
-
-  <!-- Tambahkan elemen audio di sini -->
-  <audio controls autoplay>
-    <source src="img/hani.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <audio id="background-audio" src="img/hani.mp3" autoplay loop></audio>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 <script type="application/javascript" src="script/main.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var audio = document.getElementById('background-audio');
+
+    function playAudio() {
+      audio.play().then(() => {
+        console.log("Audio played automatically");
+      }).catch(function (error) {
+        console.log("Autoplay was prevented, trying to play on user interaction.");
+        document.body.addEventListener('click', function () {
+          audio.play();
+        }, { once: true });
+      });
+    }
+
+    playAudio();
+
+    document.body.addEventListener('click', function () {
+      playAudio();
+    });
+  });
+</script>
 
 </html>
