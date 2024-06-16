@@ -2,9 +2,9 @@
   "greeting": "Hi",
   "name": "Hani",
   "greetingText": "I really like your name, by the way!",
-  "wishText": "May God always be with you and bless every step you take!",
+  "wishText": "May God always be with you and bless every step you take Hani",
   "imagePath": "img/hani.png",
-  "text1": "It's your birthday again! I always remember this date :D",
+  "text1": "We back again on my favorite date, I always remember this date do you know :P",
   "textInChatBox": "Happy birthday Hani! God bless you always ...",
   "sendButtonLabel": "Send",
   "text2": "It's time to send a simple birthday wish.",
@@ -18,6 +18,6 @@
   "bigTextPart2": "O",
   "wishHeading": "Happy‎‎Birthday‎‎My‎‎Milk‎‎Bear!",
   "outroText": "On your special day, I wish you all the happiness and joy the world can offer. You light up every room you enter, and I hope your birthday is just as bright and beautiful as you are. Happy Birthday!",
-  "replayText": " ",
-  "outroSmiley": " "
+  "replayText": "I hope you like it, and ...",
+  "outroSmiley": "You have someone now?"
 }
